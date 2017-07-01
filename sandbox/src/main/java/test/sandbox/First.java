@@ -6,22 +6,14 @@ public class First {
     hello("world");
     hello("Tatiana");
 
-    double len = 5;
-    System.out.println("The area of square is " + area(len));
+    Square s = new Square(5);
+    System.out.println("The area of square is " + s.area());
 
-    double a = 7;
-    double b = 98;
-    System.out.println("The area of rectangle is " + area(a, b));
+    Rectangle r = new Rectangle(4,5);
+    System.out.println("The area of rectangle is " + r.area());
   }
   public static void hello(String user) {
     System.out.println("Hello, " + user + "!");
   }
 
-  public static double area(double l) {
-    return l * l;
   }
-
-  public static double area(double a, double b) {
-    return a * b;
-  }
-}
